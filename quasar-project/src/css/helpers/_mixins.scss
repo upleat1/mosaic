@@ -1,0 +1,22 @@
+
+
+// ******************** code comments ********************
+// 텍스트 말줄임
+// ******************** code comments ********************
+@mixin ellipsis($line: 1) {
+
+    // 인자 값의 기본 값은 1
+    @if ($line==1) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    @else {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+    }
+}

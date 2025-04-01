@@ -1,4 +1,4 @@
-const routes = [
+const devRoutes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
@@ -15,4 +15,4 @@ const routes = [
   }
 ]
 
-export default routes
+export default devRoutes

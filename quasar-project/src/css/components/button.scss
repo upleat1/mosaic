@@ -1,0 +1,45 @@
+// Common button styles
+%button-base {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Primary button
+.btn-primary {
+    @extend %button-base;
+    background-color: #007bff;
+    color: #fff;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+// Secondary button
+.btn-secondary {
+    @extend %button-base;
+    background-color: #6c757d;
+    color: #fff;
+
+    &:hover {
+        background-color: #5a6268;
+    }
+}
+
+// Danger button
+.btn-danger {
+    @extend %button-base;
+    background-color: #dc3545;
+    color: #fff;
+
+    &:hover {
+        background-color: #c82333;
+    }
+}

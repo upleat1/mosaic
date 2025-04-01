@@ -1,0 +1,10 @@
+.k__icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

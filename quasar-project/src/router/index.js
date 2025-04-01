@@ -1,6 +1,11 @@
 import { defineRouter } from '#q-app/wrappers'
 import { createRouter, createMemoryHistory, createWebHistory, createWebHashHistory } from 'vue-router'
-import routes from './routes'
+import devRoutes from './devRoutes'
+import pubRoutes from './pubRoutes';
+export const routes = [
+  ...pubRoutes,
+  ...devRoutes,
+];
 
 /*
  * If not building with SSR mode, you can
@@ -10,6 +15,8 @@ import routes from './routes'
  * async/await or return a Promise which resolves
  * with the Router instance.
  */
+
+//pages
 
 export default defineRouter(function (/* { store, ssrContext } */) {
   const createHistory = process.env.SERVER

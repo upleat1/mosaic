@@ -1,0 +1,68 @@
+/* reset */
+html {
+    height: 100%;
+    font-size: 62.5%;
+    text-size-adjust: none;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: var(--k__color-bg-base);
+    font-size: var(--k__font-sm);
+    line-height: var(--k__lheight-sm);
+    font-family: '돋움', 'dotum', sans-serif;
+    overscroll-behavior-y: contain;
+    overflow-y: overlay; /* 스크롤 (구브라우저 대응) */
+    scrollbar-gutter: stable; /* 스크롤 (신브라우저 대응) */
+  }
+  
+  section,
+  article,
+  aside,
+  details,
+  figure,
+  header,
+  nav,
+  menu {
+    display: block;
+  }
+  
+  table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  
+  caption,
+  legend {
+    width: 0;
+    height: 0;
+    clip: rect(0 0 0 0);
+    opacity: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  pre,
+  code {
+    word-break: break-all;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a[href*='tel'] {
+    cursor: default;
+  }
+  
+  button,
+  input[type='button'] {
+  }
+  
+  

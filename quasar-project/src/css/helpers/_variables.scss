@@ -1,0 +1,262 @@
+:root {
+    /* Filter Effects */
+    --q__filter-white: brightness(0%) contrast(100%) invert(100%);
+    --q__filter-base: brightness(0%) contrast(100%) invert(7%) sepia(11%)
+      saturate(3222%) hue-rotate(182deg) brightness(95%) contrast(95%);
+    --q__filter-tertiary: brightness(0%) contrast(100%) invert(43%) sepia(34%)
+      saturate(260%) hue-rotate(183deg) brightness(91%) contrast(86%);
+    --q__filter-base-invert: brightness(0%) contrast(100%) invert(100%) sepia(74%)
+      hue-rotate(80deg) brightness(114%) contrast(100%);
+    --q__filter-neutral: brightness(0%) contrast(100%) invert(74%) sepia(6%)
+      saturate(668%) hue-rotate(179deg) brightness(85%) contrast(93%);
+    --q__filter-neutral-hover: brightness(0%) contrast(100%) invert(47%)
+      sepia(54%) saturate(542%) hue-rotate(183deg) brightness(89%) contrast(86%);
+    --q__filter-neutral-pressed: brightness(0%) contrast(100%) invert(31%)
+      sepia(13%) saturate(86%) hue-rotate(177deg) brightness(96%) contrast(90%);
+    --q__filter-disabled: brightness(0%) contrast(100%) invert(68%) sepia(14%)
+      saturate(304%) hue-rotate(179deg) brightness(91%) contrast(94%);
+    --q__filter-primary: brightness(0%) contrast(100%) invert(40%) sepia(24%)
+      saturate(1761%) hue-rotate(193deg) brightness(88%);
+    --q__filter-primary-hover: brightness(0%) contrast(100%) invert(36%)
+      sepia(16%) saturate(294%) hue-rotate(194deg) brightness(92%);
+    --q__filter-primary-pressed: brightness(0%) contrast(100%) invert(26%)
+      sepia(16%) saturate(3300%) hue-rotate(195deg) brightness(97%);
+    --q__filter-primary-disabled: brightness(0%) contrast(100%) invert(94%)
+      sepia(6%) saturate(1498%) hue-rotate(187deg) brightness(96%) contrast(93%);
+    --q__filter-hint: brightness(0%) contrast(100%) invert(76%) sepia(15%)
+      saturate(324%) hue-rotate(179deg) brightness(91%) contrast(89%);
+    --q__filter-blue: invert(65%) sepia(52%) saturate(6787%) hue-rotate(192deg)
+      brightness(102%) contrast(97%);
+    --q__filter-alert: invert(35%) sepia(97%) saturate(3467%) hue-rotate(344deg)
+      brightness(102%) contrast(88%);
+    --q__filter-success: invert(55%) sepia(70%) saturate(3636%) hue-rotate(120deg)
+      brightness(90%) contrast(86%);
+    --q__filter-warning: invert(59%) sepia(31%) saturate(2629%) hue-rotate(359deg)
+      brightness(102%) contrast(94%);
+    --q__filter-favorite: brightness(0%) contrast(100%) invert(76%) sepia(76%)
+      saturate(1142%) hue-rotate(348deg) brightness(105%) contrast(96%);
+  
+    --q__color-base: #101828;
+    --q__color-base-invert: #fffdfd;
+    --q__color-light-solid: #ffffff;
+    --q__color-secondary: #475467;
+    --q__color-tertiary: #667085;
+    --q__color-disabled: #98a2b3;
+    --q__color-hint: #98a2b3;
+  
+    /* Primary Colors */
+    --q__color-primary: #4a61c1;
+    --q__color-primary-hover: #4e5ba6;
+    --q__color-primary-pressed: #194185;
+    --q__color-primary-disabled: #b3b8db;
+    --q__color-primary-accent: #717bb6;
+    --q__color-primary-invert: #abb8db;
+  
+    /* Neutral Colors */
+    --q__color-neutral: #344054;
+    --q__color-neutral-hover: #192959;
+    --q__color-neutral-pressed: #475467;
+    --q__color-neutral-disabled: #d0d5dd;
+    --q__color-neutral-accent: #667085;
+  
+    /* Error Colors */
+    --q__color-error: #e44338;
+    --q__color-error-hover: #912018;
+    --q__color-error-disabled: #fee4ca;
+    --q__color-error-accent: #f04438;
+  
+    /* Success Colors */
+    --q__color-success: #12676a;
+    --q__color-success-hover: #056030;
+    --q__color-success-disabled: #6cea96;
+    --q__color-success-accent: #12676a;
+  
+    /* Warning Colors */
+    --q__color-warning: #f79009;
+    --q__color-warning-hover: #933704;
+    --q__color-warning-disabled: #fec84b;
+    --q__color-warning-accent: #f79009;
+  
+    /* Border Colors */
+    --q__color-border-base: rgba(161, 171, 187, 0.5);
+    --q__color-border-base-invert: #f9fafb;
+    --q__color-border-secondary: rgba(224, 228, 233, 0.75);
+    --q__color-border-tertiary: #f2f4f7;
+    --q__color-border-disabled: rgba(224, 228, 233, 0.75);
+    --q__color-border-hover: #98a2b3;
+    --q__color-border-highlight: #acb8c4;
+    --q__color-border-primary: #4a61c1;
+    --q__color-border-primary-hover: #4e5ba6;
+    --q__color-border-primary-pressed: #194185;
+    --q__color-border-primary-disabled: #b3b8db;
+    --q__color-border-primary-accent: #717bb6;
+  
+    /* Border Neutral Colors */
+    --q__color-border-neutral: #475467;
+    --q__color-border-neutral-hover: #667085;
+    --q__color-border-neutral-pressed: #475467;
+    --q__color-border-neutral-disabled: #eaecf0;
+  
+    --q__color-border-error: #f04438;
+    --q__color-border-error-hover: #912018;
+    --q__color-border-error-disabled: #fecdca;
+    --q__color-border-success: #12b76a;
+    --q__color-border-success-hover: #05603a;
+    --q__color-border-success-disabled: #a6f4c5;
+    --q__color-border-warning: #f79009;
+    --q__color-border-warning-hover: #93370d;
+    --q__color-border-warning-disabled: #fedf89;
+  
+    --q__color-bg-base: #fff;
+    --q__color-bg-base-invert: #000;
+    --q__color-bg-secondary: #fcfcfd;
+    --q__color-bg-tertiary: rgba(243, 245, 247, 0.5);
+    --q__color-bg-quaternary: rgba(235, 238, 243, 0.75);
+    --q__color-bg-hover: #f9fafb;
+    --q__color-bg-hover-invert: #1d2939;
+    --q__color-bg-pressed: #e0e4e9;
+    --q__color-bg-disabled: #f2f4f7;
+    --q__color-bg-selected: #eef4ff;
+    --q__color-bg-selected-hover: #eaecf5;
+    --q__color-bg-selected-pressed: #b2ddff;
+  
+    --q__color-bg-hint: #98a2b3;
+    --q__color-bg-primary: #4a61c1;
+    --q__color-bg-primary-hover: #4e5ba6;
+    --q__color-bg-primary-pressed: #1849a9;
+    --q__color-bg-primary-disabled: #d5d9eb;
+    --q__color-bg-primary-invert: #b3b8db;
+  
+    --q__color-bg-neutral: #98a2b3;
+    --q__color-bg-neutral-hover: #667085;
+    --q__color-bg-neutral-pressed: #475467;
+    --q__color-bg-neutral-disabled: #eaecf0;
+    --q__color-bg-error: #f04438;
+    --q__color-bg-error-hover: #912018;
+    --q__color-bg-error-pressed: #7a271a;
+    --q__color-bg-error-disabled: #fecdca;
+  
+    --q__color-bg-error-tint: #fef3f2;
+    --q__color-bg-error-disabled: #fee4e2;
+  
+    --q__color-bg-success: #12b76a;
+    --q__color-bg-success-hover: #05603a;
+  
+    --q__color-bg-success-tint: #ecfdf3;
+    --q__color-bg-success-tint-hover: #d1fadf;
+    --q__color-bg-warning: #f79009;
+    --q__color-bg-warning-hover: #93370d;
+    --q__color-bg-warning-disabled: #fedf89;
+    --q__color-bg-warning-tint: #fffaeb;
+    --q__color-bg-backdrop: #f8f9fc;
+    --q__color-bg-shadow: #eaecf5;
+  
+    /* opacity */
+    --q__opacity10: 10%;
+    --q__opacity20: 20%;
+    --q__opacity30: 30%;
+    --q__opacity40: 40%;
+    --q__opacity50: 50%;
+    --q__opacity60: 60%;
+    --q__opacity70: 70%;
+    --q__opacity80: 80%;
+  
+    /* size, spacing */
+    --q__size-unit: 0.4rem;
+    --q__size-none: 0;
+    --q__size-4xs: calc(var(--q__size-unit) * 1); /* 0.4rem */
+    --q__size-3xs: calc(var(--q__size-unit) * 2); /* 0.8rem */
+    --q__size-2xs: calc(var(--q__size-unit) * 3); /* 1.2rem */
+    --q__size-xs: calc(var(--q__size-unit) * 4); /* 1.6rem */
+    --q__size-xs-sm: calc(var(--q__size-unit) * 5); /* 2rem */
+    --q__size-sm: calc(var(--q__size-unit) * 6); /* 2.4rem */
+    --q__size-sm-md: calc(var(--q__size-unit) * 7); /* 2.8rem */
+    --q__size-md: calc(var(--q__size-unit) * 8); /* 3.2rem */
+    --q__size-lg: calc(var(--q__size-unit) * 10); /* 4rem */
+    --q__size-xl: calc(var(--q__size-unit) * 12); /* 4.8rem */
+    --q__size-2xl: calc(var(--q__size-unit) * 14); /* 5.6rem */
+    --q__size-3xl: calc(var(--q__size-unit) * 16); /* 6.4rem */
+    --q__size-4xl: calc(var(--q__size-unit) * 18); /* 7.2rem */
+    --q__size-5xl: calc(var(--q__size-unit) * 24); /* 9.em */
+    --q__size-6xl: calc(var(--q__size-unit) * 40); /* 16rem */
+  
+    --q__size-icon-xs: calc(var(--q__size-unit) * 3);
+    --q__size-icon-sm: calc(var(--q__size-unit) * 4);
+    --q__size-icon-sm-md: calc(var(--q__size-unit) * 5);
+    --q__size-icon-md: calc(var(--q__size-unit) * 6);
+    --q__size-icon-lg: calc(var(--q__size-unit) * 8);
+    --q__size-icon-xl: calc(var(--q__size-unit) * 10);
+    --q__size-icon-2xl: calc(var(--q__size-unit) * 12);
+    --q__size-icon-3xl: calc(var(--q__size-unit) * 14);
+  
+    --q__spacing-none: 0;
+    --q__spacing-2xs: calc(var(--q__size-unit) * 0.5);
+    --q__spacing-xs: calc(var(--q__size-unit) * 1);
+    --q__spacing-xssm: 0.6rem;
+    --q__spacing-sm: calc(var(--q__size-unit) * 2);
+    --q__spacing-smmd: 1rem;
+    --q__spacing-md: calc(var(--q__size-unit) * 3);
+    --q__spacing-lg: calc(var(--q__size-unit) * 4);
+    --q__spacing-lgxl: calc(var(--q__size-unit) * 5);
+    --q__spacing-xl: calc(var(--q__size-unit) * 6);
+    --q__spacing-2xl: calc(var(--q__size-unit) * 8);
+    --q__spacing-3xl: calc(var(--q__size-unit) * 10);
+    --q__spacing-4xl: calc(var(--q__size-unit) * 12);
+    --q__spacing-5xl: calc(var(--q__size-unit) * 16);
+    --q__spacing-6xl: calc(var(--q__size-unit) * 20);
+    --q__spacing-7xl: calc(var(--q__size-unit) * 24);
+    --q__spacing-8xl: calc(var(--q__size-unit) * 28);
+    --q__spacing-9xl: calc(var(--q__size-unit) * 32);
+  
+    --q__radius-xs: 0.2rem;
+    --q__radius-sm: 0.4rem;
+    --q__radius-md: 0.6rem;
+    --q__radius-lg: 0.8rem;
+    --q__radius-lgxl: 1rem;
+    --q__radius-xl: 1.2rem;
+    --q__radius-2xl: 1.6rem;
+    --q__radius-3xl: 2rem;
+    --q__radius-4xl: 3.2rem;
+    --q__radius-full: 100rem;
+  
+    /* font-weight */
+    --q__font-light: 300;
+    --q__font-medium: 500;
+    --q__font-bold: 700;
+  
+    /* etc */
+    --q__toast-duration-in: 0.25s;
+    --q__toast-duration-out: 1s;
+  
+    /* font-size */
+    --q__font-sup: 1rem;
+    --q__lheight-sup: 1.4rem;
+  
+    --q__font-xs: 1.2rem;
+    --q__lheight-xs: 1.6rem;
+  
+    --q__font-sm: 1.4rem;
+    --q__lheight-sm: 1.8rem;
+  
+    --q__font-md: 1.6rem;
+    --q__lheight-md: 2rem;
+  
+    --q__font-lg: 1.8rem;
+    --q__lheight-lg: 2.2rem;
+  
+    --q__font-xl: 2rem;
+    --q__lheight-xl: 2.4rem;
+  
+    --q__font-2xl: 2.2rem;
+    --q__lheight-2xl: 2.6rem;
+  
+    --q__font-3xl: 2.4rem;
+    --q__lheight-3xl: 3.2rem;
+  
+    --q__font-4xl: 3rem;
+    --q__lheight-4xl: 4rem;
+  
+    --q__font-5xl: 3.8rem;
+    --q__lheight-5xl: 4.8rem;
+  }
+  
