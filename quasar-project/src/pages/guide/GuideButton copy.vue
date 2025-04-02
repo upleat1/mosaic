@@ -12,7 +12,7 @@
   </div>
 
 
-  <div class="q-pa-md q-gutter-sm q-custom">
+  <div class="q-pa-md q-gutter-sm">
     <h5 class="text-h5 q-mb-md">커스텀 버튼</h5>
     <q-btn color="white" text-color="black" label="Standard" class="q-btn-custom q-btn-primary"/>
     <q-btn color="primary" label="Primary" class="q-btn-custom q-btn-primary"/>

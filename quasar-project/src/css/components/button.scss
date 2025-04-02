@@ -1,50 +1,48 @@
 // Common button styles
 %button-base {
     display: inline-block;
-    padding: 0.5em 1em;
+    padding: var(--q__spacing-md, 1rem);
     border: none;
     border-radius: 1rem;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 1rem;
-    background-color: #000;
+    background-color: --q__color-bg-base;
 
 }
 
 // Primary button
-.q-btn {
+.q-custom {
+    .q-btn {
+        @extend %button-base;
 
-    &.q-btn {
-        &-custom {
-            @extend %button-base;
-
-        }
-        &-primary {
-            @extend %button-base;
-            background-color: #007bff;
-            color: #fff;
-    
-            &:hover {
-                background-color: #0056b3;
-            }
-    
-            &__content{
-                color:red;
-            }
-        }
-    
-        &-secondary {
-            @extend %button-base;
-            background-color: #6c757d;
-            color: #fff;
+        &.q-btn {
+            &-primary {
+                @extend %button-base;
+                background-color: #007bff;
+                color: #fff;
         
-            &:hover {
-                background-color: #5a6268;
-            }
-        }
-    
+                &:hover {
+                    background-color: var(--q__color-bg-primary-hover);
+                }
         
+                &__content{
+                    color: var(--q__color-fg-base);
+                }
+            }
+        
+            &-secondary {
+                @extend %button-base;
+                background-color: #6c757d;
+                color: #fff;
+            
+                &:hover {
+                    background-color: #5a6268;
+                }
+            }
+        
+            
+        }
     }
-    
 }
