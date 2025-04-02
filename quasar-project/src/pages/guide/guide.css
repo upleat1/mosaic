@@ -1,0 +1,47 @@
+
+.aside {
+    position:fixed;
+ top:0; bottom:0; left:0; display:flex;
+ flex-direction: column;
+ padding:1rem;
+ width:24rem;
+ background-color: var(--q-bg-primary, #eee);
+  }
+  
+  .btn-link {
+    margin: 0 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    
+  }
+  
+  .main {
+    margin-left:24rem;
+    padding:2rem;
+    
+  }
+  
+  .nav {
+    overflow-y:auto;
+    margin-top:1rem;
+    padding:0 2rem;
+    
+    .router-link-exact-active {
+      .name {
+        font-size: 1.6rem;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .category {
+    position: relative;
+    &::before {
+     content:'';
+     position: absolute;
+     width: 1.5rem;
+     height: 0.8rem;
+     left:2rem;
+     background-color: #999;
+    }
+  }
